@@ -2,8 +2,6 @@
 
 Automated functional test suite for the [DummyJSON](https://dummyjson.com) REST API, built using Python. Covers authentication, products, users, carts, schema validation, and performance checks.
 
-![Tests](https://github.com/DivyanshCh39/api-test-automation-suite/actions/workflows/test.yml/badge.svg)
-
 ---
 
 ## 📋 Test Coverage
