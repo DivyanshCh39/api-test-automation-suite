@@ -1,0 +1,171 @@
+{
+  "run_timestamp": "2026-03-05 00:16:38",
+  "summary": {
+    "total": 20,
+    "passed": 20,
+    "failed": 0,
+    "pass_rate": "100.0%"
+  },
+  "results": [
+    {
+      "TC ID": "TC-001",
+      "Title": "Login with valid credentials",
+      "Status": "PASS",
+      "Expected": "200 + accessToken",
+      "Actual": "200 | accessToken=True",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-002",
+      "Title": "Login with wrong password",
+      "Status": "PASS",
+      "Expected": "400 or 401",
+      "Actual": "400",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-003",
+      "Title": "Login with empty body",
+      "Status": "PASS",
+      "Expected": "400/401/422",
+      "Actual": "400",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-004",
+      "Title": "Login with non-existent username",
+      "Status": "PASS",
+      "Expected": "400 or 401",
+      "Actual": "400",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-005",
+      "Title": "Get current user with valid token",
+      "Status": "PASS",
+      "Expected": "200 + username",
+      "Actual": "200 | username=True",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-006",
+      "Title": "Get current user without token",
+      "Status": "PASS",
+      "Expected": "401 or 403",
+      "Actual": "401",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-007",
+      "Title": "Get all products",
+      "Status": "PASS",
+      "Expected": "200 + non-empty products list",
+      "Actual": "200 | count=30",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-008",
+      "Title": "Get single product by valid ID",
+      "Status": "PASS",
+      "Expected": "200 + id=1",
+      "Actual": "200 | id=1",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-009",
+      "Title": "Get product with invalid ID (99999)",
+      "Status": "PASS",
+      "Expected": "404 Not Found",
+      "Actual": "404",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-010",
+      "Title": "Validate product response schema",
+      "Status": "PASS",
+      "Expected": "Fields: {'description', 'price', 'category', 'title', 'id'}",
+      "Actual": "Missing: None",
+      "Note": "Schema validation"
+    },
+    {
+      "TC ID": "TC-011",
+      "Title": "Search products by keyword 'phone'",
+      "Status": "PASS",
+      "Expected": "200 + matching results",
+      "Actual": "200 | results=23",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-012",
+      "Title": "Filter products by category 'smartphones'",
+      "Status": "PASS",
+      "Expected": "200 + results",
+      "Actual": "200",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-013",
+      "Title": "Get products with limit=5",
+      "Status": "PASS",
+      "Expected": "200 + exactly 5 products",
+      "Actual": "200 | count=5",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-014",
+      "Title": "Get all users",
+      "Status": "PASS",
+      "Expected": "200 + non-empty users list",
+      "Actual": "200 | count=30",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-015",
+      "Title": "Get single user by valid ID",
+      "Status": "PASS",
+      "Expected": "200 + id=1",
+      "Actual": "200 | id=1",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-016",
+      "Title": "Validate user response schema",
+      "Status": "PASS",
+      "Expected": "Fields: {'lastName', 'firstName', 'email', 'age', 'id'}",
+      "Actual": "Missing: None",
+      "Note": "Schema validation"
+    },
+    {
+      "TC ID": "TC-017",
+      "Title": "Response time under 3000ms",
+      "Status": "PASS",
+      "Expected": "< 3000ms",
+      "Actual": "296ms",
+      "Note": "Performance check"
+    },
+    {
+      "TC ID": "TC-018",
+      "Title": "Content-Type is application/json",
+      "Status": "PASS",
+      "Expected": "application/json",
+      "Actual": "application/json; charset=utf-8",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-019",
+      "Title": "Validate cart response schema",
+      "Status": "PASS",
+      "Expected": "Fields: {'total', 'products', 'id', 'userId'}",
+      "Actual": "Missing: None",
+      "Note": ""
+    },
+    {
+      "TC ID": "TC-020",
+      "Title": "Get all product categories",
+      "Status": "PASS",
+      "Expected": "200 + non-empty list",
+      "Actual": "200 | count=24",
+      "Note": ""
+    }
+  ]
+}
