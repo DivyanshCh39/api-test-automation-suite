@@ -83,3 +83,8 @@ Tests run automatically on every push and pull request, and daily at 9AM UTC. Th
 - ✅ API response time threshold (< 3000ms)
 - ✅ Content-Type header validation
 - ✅ Edge cases — missing fields, wrong credentials, nonexistent IDs
+
+## 📸 Sample Output
+
+![Test Output](assets/test-output.png)
+
