@@ -255,7 +255,7 @@ if __name__ == "__main__":
     for t in tests:
         try:
             t()
-            time.sleep(2)
+            time.sleep(3)
         except Exception as e:
             name = t.__name__.replace("test_", "").replace("_", " ").title()
             log("TC-ERR", name, FAIL, "No exception", str(e), "Unexpected error")

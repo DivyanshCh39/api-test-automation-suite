@@ -1,10 +1,10 @@
 {
-  "run_timestamp": "2026-03-05 00:16:38",
+  "run_timestamp": "2026-03-05 00:55:19",
   "summary": {
     "total": 20,
-    "passed": 20,
-    "failed": 0,
-    "pass_rate": "100.0%"
+    "passed": 18,
+    "failed": 2,
+    "pass_rate": "90.0%"
   },
   "results": [
     {
@@ -26,9 +26,9 @@
     {
       "TC ID": "TC-003",
       "Title": "Login with empty body",
-      "Status": "PASS",
+      "Status": "FAIL",
       "Expected": "400/401/422",
-      "Actual": "400",
+      "Actual": "429",
       "Note": ""
     },
     {
@@ -83,7 +83,7 @@
       "TC ID": "TC-010",
       "Title": "Validate product response schema",
       "Status": "PASS",
-      "Expected": "Fields: {'description', 'price', 'category', 'title', 'id'}",
+      "Expected": "Fields: {'category', 'title', 'id', 'price', 'description'}",
       "Actual": "Missing: None",
       "Note": "Schema validation"
     },
@@ -130,9 +130,9 @@
     {
       "TC ID": "TC-016",
       "Title": "Validate user response schema",
-      "Status": "PASS",
-      "Expected": "Fields: {'lastName', 'firstName', 'email', 'age', 'id'}",
-      "Actual": "Missing: None",
+      "Status": "FAIL",
+      "Expected": "Fields: {'age', 'email', 'firstName', 'id', 'lastName'}",
+      "Actual": "Missing: {'age', 'email', 'firstName', 'id', 'lastName'}",
       "Note": "Schema validation"
     },
     {
@@ -140,7 +140,7 @@
       "Title": "Response time under 3000ms",
       "Status": "PASS",
       "Expected": "< 3000ms",
-      "Actual": "296ms",
+      "Actual": "272ms",
       "Note": "Performance check"
     },
     {
@@ -155,7 +155,7 @@
       "TC ID": "TC-019",
       "Title": "Validate cart response schema",
       "Status": "PASS",
-      "Expected": "Fields: {'total', 'products', 'id', 'userId'}",
+      "Expected": "Fields: {'userId', 'products', 'total', 'id'}",
       "Actual": "Missing: None",
       "Note": ""
     },
