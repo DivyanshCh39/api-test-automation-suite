@@ -86,5 +86,5 @@ Tests run automatically on every push and pull request, and daily at 9AM UTC. Th
 
 ## 📸 Sample Output
 
-![Test Output](assets/test-output.png)
+![Test Output](assets/test_output.png)
 
